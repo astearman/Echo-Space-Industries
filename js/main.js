@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector('.menu-btn');
 
 let menuOpen = false;
@@ -13,24 +12,29 @@ menuBtn.addEventListener('click', () => {
 });
 
 
+
 let toggleDimStatus = false;
 let toggleDim = function() {
   let getDimScreen = document.querySelector("body");
 
   if (toggleDimStatus === false) {
-    getDimScreen.style.background = "#6a6a6a";
-  
+    getDimScreen.style.background = "#000";
+    getDimScreen.style.opacity = "0.85";
+ 
+   
     toggleDimStatus = true;
   } 
   
   else if (toggleDimStatus === true) {
     getDimScreen.style.background = "#fff";
     getDimScreen.style.opacity = "1";
+    getDimScreen.style.position = "relative";
+    
+    
 
     toggleDimStatus = false;
   }   
 }
-
 
 let toggleNavStatus = false;
 let toggleNav = function() {

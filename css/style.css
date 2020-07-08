@@ -91,6 +91,10 @@ form {
     border-radius: 8px;
 }
 
+.anchor {
+    scroll-margin-top:90px;
+}
+
 /* Horizontal Nav */
 
 .nav-main {
@@ -443,6 +447,7 @@ form {
 
 .row3 {
     padding-bottom:4em;
+    background: #fff;
 }
 
 .row3 hr {
@@ -501,6 +506,8 @@ form {
 
 .featured-img-2 {
     flex-shrink: 0;
+    position: relative;
+    z-index:999;
   }
 
 
@@ -508,6 +515,7 @@ form {
 
 .row6 {
     padding: 4em 0 4em 0;
+    background: #fff;
 }
 
 .row6 hr {
@@ -673,7 +681,6 @@ form {
     color: #fff;
     text-align: center;
     padding: 1.5em 0;
-    margin-top:3em;
 }
 
 /* Media Queries */
@@ -840,7 +847,7 @@ form {
     }
 
     .featured-img-2 {
-       padding-top:3em;
+       padding-top:1.5em;
     }
 
     .primary2 {
