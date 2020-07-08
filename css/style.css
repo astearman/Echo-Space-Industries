@@ -25,6 +25,7 @@ body {
     min-height: 100vh;
     margin-top:90px;
     transition: all 0.5s ease-in-out;
+    z-index:999;
 }
 
 a {
@@ -89,6 +90,18 @@ form {
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
+}
+
+.dimmer {      
+    background:#000;
+    opacity:0.8;
+    position:fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:999; /* may not be necessary */
 }
 
 .anchor {
@@ -164,6 +177,7 @@ form {
     z-index: 1000;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
+    z-index:9999;
 }
 
 .nav-sidebar ul {

@@ -1,3 +1,5 @@
+
+/* Hamburger Menu Open/Close */
 const menuBtn = document.querySelector('.menu-btn');
 
 let menuOpen = false;
@@ -20,22 +22,20 @@ let toggleDim = function() {
   if (toggleDimStatus === false) {
     getDimScreen.style.background = "#000";
     getDimScreen.style.opacity = "0.85";
- 
-   
+    getDimScreen.style.zIndex = "9999";
     toggleDimStatus = true;
   } 
   
   else if (toggleDimStatus === true) {
     getDimScreen.style.background = "#fff";
     getDimScreen.style.opacity = "1";
-    getDimScreen.style.position = "relative";
-    
-    
-
+    getDimScreen.style.zIndex = "0";
     toggleDimStatus = false;
   }   
 }
 
+
+/* Hamburger Menu Open/Close */
 let toggleNavStatus = false;
 let toggleNav = function() {
   let getSidebar = document.querySelector(".nav-sidebar");
@@ -55,6 +55,7 @@ let toggleNav = function() {
   }   
 }
 
+/* Image Carousel */
 const slides = document.querySelectorAll('.banner-slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
@@ -96,17 +97,4 @@ next.addEventListener('click', e => {
 
 prev.addEventListener('click', e => {
   prevSlide();
-});
-
-$('a[href^="#"]').on('click',function (e) {
-  e.preventDefault();
-  var target = this.hash;
-  var $trget = $(target);
-  // Example: your header is 70px tall.
-  var newTop = $trget.offset().top - 70; 
-  $('html, body').animate ({
-      scrollTop: newTop
-  }, 500, 'swing', function () {
-      window.location.hash = target;
-  }); 
 });
