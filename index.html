@@ -6,11 +6,10 @@
 	<title>Echo</title>
 	<script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-	
+	<!--Nav Bar on Desktop-->
     <nav class="nav-main">
 		<h1 class="nav-title"><a href="index.html">ECHO</a></h1>
 		<div class="menu-btn" onclick="toggleNav(), toggleDim()">
@@ -18,27 +17,28 @@
         </div>
         <ul>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#testimonials">TESTIMONIALS</a></li>
-			<li><a href="#">PRICING</a></li>
-			<li><a href="#">CONTACT</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
         </ul>
-    </nav>
-
+	</nav>
+	
+<!--Nav Bar on Mobile-->
     <aside class="nav-sidebar">
         <ul>
             <li><span>Menu</span></li>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-			<li><a href="#">PRICING</a></li>
-			<li><a href="#">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
         </ul>
 	</aside>
 
+<!--Banner/Slider-->
     <div class="banner">
-			<img class="logo" src="img/echo-logo.png" alt="logo">
-	<!--	<h3 class="tagline">every great blog title is all lowercase with a + symbol</h3>-->
+		<img class="logo" src="img/echo-logo.png" alt="logo">
 		<div class="banner-slide current"></div>
 		<div class="banner-slide"></div>
 		<div class="banner-slide"></div>
@@ -50,6 +50,7 @@
 		<button id="next"><i class="fas fa-arrow-right"></i></button>
 	</div>
 
+<!--Row 1-->
 <div class="row1">
 	<div class="featured">
 		<h2>We don't just build rockets</h2>
@@ -76,13 +77,15 @@
 	</div>
 </div>
 
-<div class="row2" id="about">
+<!--Row 2-->
+<div class="row2">
 		<img class="stats" src="img/stats-1.png">
 		<img class="stats" src="img/stats-2.png">
 		<img class="stats" src="img/stats-3.png">
 </div>
 
-<div class="row3">
+<!--Row 3-->
+<div class="row3" id="about">
 	<div class="about">
 		<div><h4>LEARN A LITTLE ABOUT US</h4></div>
 		<div><hr></div>
@@ -112,6 +115,7 @@
 		</div>
 </div>
 
+<!--Row 4-->
 <div class="row4" id="testimonials">
 	<div class="testimonial">
 		<h2 class="testimonial">What Do Our Clients Say?</h2>
@@ -124,8 +128,8 @@
 	</div>
 </div>
 
-
-<div class="row5">
+<!--Row 5-->
+<div class="row5" id="pricing">
 	<div class="pricing">
 		<h2>So how much does it cost to leave the Earth?</h2>
 		<h3>How much you got? We'll take that plus some more</h3>
@@ -148,8 +152,8 @@
 	</div>
 </div>
 
-
-<div class="row6">
+<!--Row 6-->
+<div class="row6" id="contact">
 	<div class="contact">
 		<h1>Contact Us</h1>
 		<h3>Are you ready to experience the awe-inspiring wonders of our galaxy? We know you are. 
@@ -175,6 +179,8 @@
 		<button class="page-buttons">info@echo.com</button>
 	</div>
 </div>
+
+<!--Contact Form
 		<form action="index.html" method="post">
         
 			<h1>Contact Us</h1>
@@ -237,6 +243,7 @@
 			<button type="submit" class="form-button">Sign Up</button>
 			
 		  </form>
+		  -->
 		</div>	
 
 </div>

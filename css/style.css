@@ -1,5 +1,13 @@
 /* Universal Style */
 
+@font-face {
+    font-family: 'individigitaldemibold';
+    src: url('../fonts/individigital_demibold-webfont.woff2') format('woff2'),
+         url('..fonts/individigital_demibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -126,15 +134,17 @@ form {
 
 .nav-title {
     display:flex;
-    font-size: 1.35em;
+    font-size: 1.75em;
     padding: 15px 0 15px 5px;
     line-height:60px;
     white-space: nowrap;
     order:1;
+    font-family: 'individigitaldemibold';
+    font-weight:500;
 }
 
 .nav-title a:hover {
-    color:#0a2c47;;
+    color:#5ac0c5;
 }
 
 
@@ -295,23 +305,23 @@ form {
 }
 
 .banner-slide:nth-child(2) {
-    background: url('../img/slider-1.jpg') no-repeat center center/cover;
+    background: url('../img/slider-1.jpg') no-repeat center center/cover fixed;
 }
 
 .banner-slide:nth-child(3) {
-    background: url('../img/slider-2.jpg') no-repeat center center/cover;
+    background: url('../img/slider-2.jpg') no-repeat center center/cover fixed;
 }
 
 .banner-slide:nth-child(4) {
-    background: url('../img/slider-3.jpg') no-repeat center center/cover;
+    background: url('../img/slider-3.jpg') no-repeat center center/cover fixed;
 }
 
 .banner-slide:nth-child(5) {
-    background: url('../img/slider-4.jpg') no-repeat center center/cover;
+    background: url('../img/slider-4.jpg') no-repeat center center/cover fixed;
 }
 
 .banner-slide:nth-child(6) {
-    background: url('../img/slider-5.jpg') no-repeat center center/cover;
+    background: url('../img/slider-5.jpg') no-repeat center center/cover fixed;
 }
   
 .logo {
