@@ -77,13 +77,11 @@ const prevSlide = () => {
   // Remove Current Class
   current.classList.remove('current');
   // Check for prev slide
-  if(current.previousElementSibling) {
-    // Add current to next sibling
-    current.previousElementSibling.classList.add('current');
+  if(current.previousElementSibling && current.previousElementSibling.classList.contains("banner-slide") ) {
+    current.previousElementSibling.classList.add("current");
   } else {
-    // Add current to last
-    slides[slides.length - 1].classList.add('current');
-  }
+  slides[slides.length - 1].classList.add("current");
+}
   setTimeout(() => current.classList.remove('current'));
 };
 
@@ -96,3 +94,15 @@ prev.addEventListener('click', e => {
   prevSlide();
 });
 
+$('a[href^="#"]').on('click',function (e) {
+  e.preventDefault();
+  var target = this.hash;
+  var $trget = $(target);
+  // Example: your header is 70px tall.
+  var newTop = $trget.offset().top - 70; 
+  $('html, body').animate ({
+      scrollTop: newTop
+  }, 500, 'swing', function () {
+      window.location.hash = target;
+  }); 
+});
