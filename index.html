@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Echo</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.bmp" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,7 +28,7 @@
         </ul>
 	</nav>
 
-	<div class="dimmer"></div>
+	<div id="dimmer"></div>
 	
 <!--Nav Bar on Mobile-->
     <aside class="nav-sidebar">
@@ -171,7 +173,9 @@
 			<h5>Give us a call</h5>
 			<p>Our scheduling department is open Monday through Friday 9am-6pm EST. If you are looking for more information about the space charter process,
 			or have questions about your already scheduled trip, press 2 during the selection process.</p>
+			<a href="tel:5028675309">
 			<button class="page-buttons">+1 502 857 5309</button>
+			</a>
 		</div>
 
 	<div class="email">
@@ -180,77 +184,44 @@
 		<h5>Send us a message</h5>
 		<p>Email us anytime for more information or to check on your upcoming charter. You will receive an email response within 24 hours of sending. This is 
 			some more text in order to make the phone and email paragraphs roughly equal in length. </p>
+			<a href="mailto:info@echo.com?subject=What ya wanna know?">
 		<button class="page-buttons">info@echo.com</button>
+		</a>
 	</div>
 </div>
 
-<!--Contact Form
-		<form action="index.html" method="post">
-        
-			<h1>Contact Us</h1>
-			<h3>We would love to hear from you</h3>
-			
-			<fieldset>
-			  
-			  <legend><span class="number">1</span> Your basic info</legend>
-			  
-			  <label for="name">Name:</label>
-			  <input type="text" id="name" name="user_name">
-			  
-			  <label for="mail">Email:</label>
-			  <input type="email" id="mail" name="user_email">
-			  
-			  <label for="password">Password:</label>
-			  <input type="password" id="password" name="user_password">
-			  
-			  <label>Age:</label>
-			  <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
-			  <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
-			
-			</fieldset>
-			
-			<fieldset>
-			  
-			  <legend><span class="number">2</span> Your profile</legend>
-			  
-			  <label for="bio">Biography:</label>
-			  <textarea id="bio" name="user_bio"></textarea>
-			  
-			  <label for="job">Job role:</label>
-			  <select id="job" name="user_job">
-				<optgroup label="Web">
-				  <option value="frontend_developer">Front-End Developer</option>
-				  <option value="php_developer">PHP Developer</option>
-				  <option value="python_developer">Python Developer</option>
-				  <option value="rails_developer">Rails Developer</option>
-				  <option value="web_designer">Web Designer</option>
-				  <option value="wordpress_developer">WordPress Developer</option>
-				</optgroup>
-				<optgroup label="Mobile">
-				  <option value="android_developer">Android Developer</option>
-				  <option value="ios_developer">iOS Developer</option>
-				  <option value="mobile_designer">Mobile Designer</option>
-				</optgroup>
-				<optgroup label="Business">
-				  <option value="business_owner">Business Owner</option>
-				  <option value="freelancer">Freelancer</option>
-				</optgroup>
-			  </select>
-			
-			  <label>Interests:</label>
-			  <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
-			  <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
-			  <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
-			  
-			</fieldset>
-			  
-			<button type="submit" class="form-button">Sign Up</button>
-			
-		  </form>
-		  -->
-		</div>	
 
+<form action="/my-handling-form-page" method="post">
+	<ul>
+	 <li>
+	   <label for="name">Name:</label>
+	   <input type="text" id="name" name="user_name">
+	 </li>
+	 <li>
+	   <label for="mail">E-mail:</label>
+	   <input type="email" id="mail" name="user_email">
+	 </li>
+	 <li>
+	   <label for="msg">Message:</label>
+	   <textarea id="msg" name="user_message"></textarea>
+	 </li>
+	</ul>
+   </form>
+
+</div>	
+
+<a class="trigger_popup_fricc">Click here to show the popup</a>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <p>Add any HTML content<br />inside the popup box!</p>
+    </div>
 </div>
+
+
+
 
 <footer class="footer">
 	<span>&copy;2020 Echo Space Industries. All rights reserved.</span>

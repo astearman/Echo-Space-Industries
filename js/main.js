@@ -17,19 +17,31 @@ menuBtn.addEventListener('click', () => {
 
 let toggleDimStatus = false;
 let toggleDim = function() {
-  let getDimScreen = document.querySelector("body");
+  let getDimScreen = document.querySelector("#dimmer");
 
   if (toggleDimStatus === false) {
     getDimScreen.style.background = "#000";
-    getDimScreen.style.opacity = "0.85";
-    getDimScreen.style.zIndex = "9999";
+    getDimScreen.style.opacity = "0.3";
+    getDimScreen.style.position = "fixed";
+    getDimScreen.style.top = "0";
+    getDimScreen.style.left = "0";
+    getDimScreen.style.width = "100%";
+    getDimScreen.style.height = "100%";
+    getDimScreen.style.zIndex = "999";
+
     toggleDimStatus = true;
   } 
   
   else if (toggleDimStatus === true) {
-    getDimScreen.style.background = "#fff";
+    getDimScreen.style.background = "";
     getDimScreen.style.opacity = "1";
-    getDimScreen.style.zIndex = "0";
+    getDimScreen.style.position = "initial";
+    getDimScreen.style.top = "0";
+    getDimScreen.style.left = "0";
+    getDimScreen.style.width = "";
+    getDimScreen.style.height = "";
+    getDimScreen.style.zIndex = "999";
+
     toggleDimStatus = false;
   }   
 }
@@ -97,4 +109,16 @@ next.addEventListener('click', e => {
 
 prev.addEventListener('click', e => {
   prevSlide();
+});
+
+$(window).load(function () {
+  $(".trigger_popup_fricc").click(function(){
+     $('.hover_bkgr_fricc').show();
+  });
+  $('.hover_bkgr_fricc').click(function(){
+      $('.hover_bkgr_fricc').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_bkgr_fricc').hide();
+  });
 });
