@@ -14,7 +14,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-
+/* Dim screen when hamburger menu is open */
 let toggleDimStatus = false;
 let toggleDim = function() {
   let getDimScreen = document.querySelector("#dimmer");
@@ -23,8 +23,6 @@ let toggleDim = function() {
     getDimScreen.style.background = "#000";
     getDimScreen.style.opacity = "0.3";
     getDimScreen.style.position = "fixed";
-    getDimScreen.style.top = "0";
-    getDimScreen.style.left = "0";
     getDimScreen.style.width = "100%";
     getDimScreen.style.height = "100%";
     getDimScreen.style.zIndex = "999";
@@ -33,15 +31,8 @@ let toggleDim = function() {
   } 
   
   else if (toggleDimStatus === true) {
-    getDimScreen.style.background = "";
-    getDimScreen.style.opacity = "1";
+    
     getDimScreen.style.position = "initial";
-    getDimScreen.style.top = "0";
-    getDimScreen.style.left = "0";
-    getDimScreen.style.width = "";
-    getDimScreen.style.height = "";
-    getDimScreen.style.zIndex = "999";
-
     toggleDimStatus = false;
   }   
 }
