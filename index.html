@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Echo</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.bmp" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--Nav Bar on Desktop-->
+	<div class="anchor" id="home"></div>
+    <nav class="nav-main">
+		<h1 class="nav-title"><a href="#home">ECHO</a></h1>
+		<div class="menu-btn" onclick="toggleNav(), toggleDim()">
+			<div id="toggle_div"></div>
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+        </ul>
+	</nav>
+
+	<div id="dimmer"></div>
+	
+<!--Nav Bar on Mobile-->
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Menu</span></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+			<li><a href="#pricing">PRICING</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+        </ul>
+	</aside>
+
+<!--Banner/Slider-->
+    <div class="banner">
+		<img class="logo" src="img/echo-logo.png" alt="logo">
+		<div class="banner-slide current"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+		<div class="banner-slide"></div>
+	</div>
+	<div class="buttons">
+		<button id="prev"><i class="fas fa-arrow-left"></i></button>
+		<button id="next"><i class="fas fa-arrow-right"></i></button>
+	</div>
+
+<!--Row 1-->
+<div class="row1">
+	<div class="featured">
+		<h2>We don't just build rockets</h2>
+		<h3>We sometimes launch them too</h3>
+		<br>
+		<p>Let's face it, the world is pretty crazy right now. Wouldn't you just like to escape? Why not blast off this rock into the great unknown of
+			space with Echo Space Industries! Coronavirus can't survive in space ya know. 
+			<br><br>
+			Echo Space Industries is the future of space exploration. Besides chartering guests to the final frontier, our primary goal is to put a man on
+			Saturn's rings within the next decade. We really want to see if you can ice skate on those bad boys. Reach out to us today for your space charter needs!</p>
+
+	<a href="#about"><button class="page-buttons">ABOUT US</button></a>
+	<div class="break"></div>
+		
+	<div class="bullets">
+		<p>+ Professionally visualize intermandated models</p>
+		<p>+ Holisticly repurpose high-quality sources</p>
+		<p>+ Conveniently incentivize error-free potentialities</p>
+	</div>
+	</div>
+
+	<div class="featured-img">
+		<img src="img/rocket-echo.png" alt="hands under water">
+	</div>
+</div>
+
+<!--Row 2-->
+<div class="row2">
+		<img class="stats" src="img/stats-1.png">
+		<img class="stats" src="img/stats-2.png">
+		<img class="stats" src="img/stats-3-1.png">
+</div>
+
+<!--Row 3-->
+<div class="row3 anchor" id="about">
+	<div class="about">
+		<div><h4>LEARN A LITTLE ABOUT US</h4></div>
+		<div><hr></div>
+		<div><h3>Why your next launch should be with Echo</h3></div>
+	</div>
+	<div class="break"></div>
+	<div class="break"></div>
+		<div class="primary col"><h4><span class="numbers2">01</span>PROVEN TRACK RECORD</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus neque esse non, iure totam laborum adipisci quis voluptatem corrupti, 
+				architecto amet quam labore a. Alias earum unde quia! Similique, nesciunt.</p>
+		</div>
+
+		<div class="secondary col"><h4><span class="numbers2">02</span>GOVERNMENT FUNDING</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus neque esse non, iure totam laborum adipisci quis voluptatem corrupti, 
+				architecto amet quam labore a. Alias earum unde quia! Similique, nesciunt.</p>
+		</div>
+
+		<div class="tertiary col"><h4><span class="numbers2">03</span>FIVE STAR YELP REVIEWS</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus neque esse non, iure totam laborum adipisci quis voluptatem corrupti, 
+				architecto amet quam labore a. Alias earum unde quia! Similique, nesciunt.</p>
+		</div>
+
+		<div class="break"></div>
+
+		<div class="center">
+			<button class="page-buttons">LEARN MORE</button>
+		</div>
+</div>
+
+<!--Row 4-->
+<div class="row4 anchor" id="testimonials">
+	<div class="testimonial">
+		<h2 class="testimonial">What Do Our Clients Say?</h2>
+		<div class="break"></div>
+		<p><i>"Wow, what an experience! This was just my 3rd time in space and this trip was by far the best thanks to Echo. From blast off to touch down,
+			they did not dissapoint. I don't know what's the deal with airline food, but rocket food is amazing. We even got to see a 4th dimensional space whale! What a treat. All in all, I would rate Echo Space Industries 5 stars,
+			hah get it? Cause it's space."</i></p>
+			<div><hr></div>
+			<p>Mike Mikerson, Louisville, KY</p>
+	</div>
+</div>
+
+<!--Row 5-->
+<div class="row5 anchor" id="pricing">
+	<div class="pricing">
+		<h2>So how much does it cost to leave the Earth?</h2>
+		<h3>How much you got? We'll take that plus some more</h3>
+		<br>
+		<p>Space travel is kinda difficult. We have put years and years of R&D into this company and so the price will reflect that dedication.
+            If you are wanting to get on the next shuttle outta here then you will be looking at <b>3 easy payments of 100k and 1 complicated 
+            payment of 200k.</b> If you need to use a few credit cards, that's okay.</p>
+
+		<p>Interested in a payment plan? We can work with you on easy, no hassle incremental payments towards your adventure into
+			space exploration. If you participate in our super safe (not sketchy at all) experiments, we can knock a payment off.</p>
+
+		<p>So what are you waiting for? Grab your checkbook, write down 500k and send it on over to us here at Echo Space Industries.
+			If you have any further questions about pricing or payment options, just click the button below.</p>
+		
+	<button class="page-buttons">MORE INFO ON PRICING</button>
+	</div>
+
+	<div class="featured-img-2">
+		<img src="img/astronaut.png" alt="hands under water">
+	</div>
+</div>
+
+<!--Row 6-->
+<div class="row6 anchor" id="contact">
+	<div class="contact">
+		<h1>Contact Us</h1>
+		<h3>Are you ready to experience the awe-inspiring wonders of our galaxy? We know you are. 
+			So reach out to us by phone or email with any questions and to schedule your trip into space today!</h3>
+	</div>
+	<br>
+	<div class="phone-email">
+		<div class="phone">
+			<i class="fas fa-phone" id="phone"></i>
+			<hr>
+			<h5>Give us a call</h5>
+			<p>Our scheduling department is open Monday through Friday 9am-6pm EST. If you are looking for more information about the space charter process,
+			or have questions about your already scheduled trip, press 2 during the selection process.</p>
+			<a href="tel:5028675309">
+			<button class="page-buttons">+1 502 857 5309</button>
+			</a>
+		</div>
+
+	<div class="email">
+		<i class="fas fa-envelope" id="email"></i>
+		<hr>
+		<h5>Send us a message</h5>
+		<p>Email us anytime for more information or to check on your upcoming charter. You will receive an email response within 24 hours of sending. This is 
+			some more text in order to make the phone and email paragraphs roughly equal in length. </p>
+			<a href="mailto:info@echo.com?subject=What ya wanna know?">
+		<button class="page-buttons">info@echo.com</button>
+		</a>
+	</div>
+</div>
+
+
+<form action="/my-handling-form-page" method="post">
+	<ul>
+	 <li>
+	   <label for="name">Name:</label>
+	   <input type="text" id="name" name="user_name">
+	 </li>
+	 <li>
+	   <label for="mail">E-mail:</label>
+	   <input type="email" id="mail" name="user_email">
+	 </li>
+	 <li>
+	   <label for="msg">Message:</label>
+	   <textarea id="msg" name="user_message"></textarea>
+	 </li>
+	</ul>
+   </form>
+
+</div>	
+
+<a class="trigger_popup_fricc">Click here to show the popup</a>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <p>Add any HTML content<br />inside the popup box!</p>
+    </div>
+</div>
+
+
+
+
+<footer class="footer">
+	<span>&copy;2020 Echo Space Industries. All rights reserved.</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
