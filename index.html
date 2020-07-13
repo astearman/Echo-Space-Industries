@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Echo</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/icon.bmp" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
 	<script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -154,30 +153,29 @@
 	<div id ="myPopup" class="popup">
 		<div class="popup-content">
 		<span class="close">&times;</span>
-		<p> <h1>Trip Price Calculator</h1>
+		<p><h1>Trip Price Calculator</h1>
 			<br>
-			<select name='base'>
-				<option value="0">-- Select Base Package --</option>
+	
+			<select name='base' class="price">
+				<option selected disabled value="0">-- Select Base Package --</option>
 				<option value='150000' id="base">Cosmic Package: $150,000</option>
 				<option value='175000' id="base">Astral Package: $175,000</option>
 				<option value='200000' id="base">Stellar Package: $200,000</option>
 			</select>
 		
-			
 			<br>
 		
-			<select name='seat'>
-				<option value="0"> -- Select Seat --</option>
-				<option value='6000' id="seat">Middle: 6,000</option>
-				<option value='8000' id="seat">Aisle: 8,000</option>
-				<option value='10000' id="seat">Window: 10,000</option>
+			<select name='seat' class="price">
+				<option selected disabled value="0"> -- Select Seat --</option>
+				<option value='6000' id="seat">Middle: $6,000</option>
+				<option value='8000' id="seat">Aisle: $8,000</option>
+				<option value='10000' id="seat">Window: $10,000</option>
 			</select>
 		
-		
 			<br>
 		
-			<select name='destinations' id="destination">
-				<option value="0"> -- Select Destination --</option>
+			<select name='destinations' class="price">
+				<option selected disabled value="0"> -- Select Destination --</option>
 				<option value='5000'>Moon: $5,000</option>
 				<option value='15000'>Mercury: $15,000</option>
 				<option value='10000'>Venus: $10,000</option>
@@ -191,29 +189,31 @@
 			
 			<br>
 		
-			<select name='snacks'>
-				<option value="0">-- Select Snack Addon --</option>
+			<select name='snacks' class="price">
+				<option selected disabled value="0">-- Select Snack Addon --</option>
 				<option value="0">No Thanks</option>
 				<option value='10'>Moon Rocks: $10</option>
 				<option value='15'>Rocket Kabobs: $15</option>
 				<option value='20'>Galactic Goulash: $20</option>
 			</select>
-
+		
 			<br>
-
-			<select name='drinks'>
-				<option value="0">-- Select Drink Addon --</option>
+		
+			<select name='drinks' class="price">
+				<option selected disabled value="0">-- Select Drink Addon --</option>
 				<option value="0">No Thanks</option>
 				<option value="10">Milky Way Martini: $10</option>
 				<option value='10'>Shooting Star Slushie: $10</option>
 				<option value='10'>Martian Mule: $10</option>
 				<option value='10'>Comet Chardonnay: $10</option>
 			</select>
-		
-			<h2>Your Price:</h2>
-			
-			<input id="totalPrice" type="text" />
+		<input type="button" id="add" value="Calculate" class="page-buttons" />
+		<br>
+		<br>
+		<h2>Your Price:</h2>
+		<input type="text" name="totalPrice" id="totalPrice" value="">
 		</p>
+	</form>
 	</div>
 	</div>
 	
@@ -256,7 +256,7 @@
 	</div>
 </div>
 
-
+<!--
 <form action="/my-handling-form-page" method="post">
 	<ul>
 	 <li>
@@ -273,9 +273,8 @@
 	 </li>
 	</ul>
    </form>
-
+-->
 </div>	
-
 
 <footer class="footer">
 	<span>&copy;2020 Echo Space Industries. All rights reserved.</span>

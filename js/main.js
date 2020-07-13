@@ -1,18 +1,4 @@
 
-/* Hamburger Menu Open/Close */
-const menuBtn = document.querySelector('.menu-btn');
-
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuOpen = true;
-    menuBtn.classList.add('open');
-  } else {
-    menuOpen = false;
-    menuBtn.classList.remove('open');
-  }
-});
-
 
 /* Dim screen when hamburger menu is open */
 let toggleDimStatus = false;
@@ -33,6 +19,7 @@ let toggleDim = function() {
   else if (toggleDimStatus === true) {
     
     getDimScreen.style.position = "initial";
+
     toggleDimStatus = false;
   }   
 }
@@ -93,21 +80,12 @@ const prevSlide = () => {
 };
 
 // Button Events
-next.addEventListener('click', e => {
+next.addEventListener('click', x => {
   nextSlide();
 });
 
-prev.addEventListener('click', e => {
+prev.addEventListener('click', x => {
   prevSlide();
-});
-
-// Price Calculator
-$('select').change(function() {
-  var sum = 0;
-  $('option:selected, input:selected').each(function() {
-    sum += parseInt($(this).val(), 10);
-  });
-  $("#totalPrice").val(sum);
 });
 
 
@@ -123,4 +101,19 @@ btn.onclick = function() {
 
 span.onclick = function() {
   popup.style.display = "none";
+}
+
+// Price Calculator
+const sum = document.getElementById('add');
+sum.onclick = calculatePrice;
+
+function calculatePrice() {
+    
+        var options = document.getElementsByClassName('price');
+        var optionsLength = options.length,
+        total = 0;
+        for (var i = 0; i < optionsLength; ++i) {
+          total += parseInt(options[i].value * 1);
+        }
+        document.getElementById('totalPrice').value = total;
 }
