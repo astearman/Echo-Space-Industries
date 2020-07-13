@@ -37,7 +37,6 @@ let toggleDim = function() {
   }   
 }
 
-
 /* Hamburger Menu Open/Close */
 let toggleNavStatus = false;
 let toggleNav = function() {
@@ -102,14 +101,26 @@ prev.addEventListener('click', e => {
   prevSlide();
 });
 
-$(window).load(function () {
-  $(".trigger_popup_fricc").click(function(){
-     $('.hover_bkgr_fricc').show();
+// Price Calculator
+$('select').change(function() {
+  var sum = 0;
+  $('option:selected, input:selected').each(function() {
+    sum += parseInt($(this).val(), 10);
   });
-  $('.hover_bkgr_fricc').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
-  $('.popupCloseButton').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
+  $("#totalPrice").val(sum);
 });
+
+
+// Popup 
+var popup = document.getElementById("myPopup");
+var btn = document.getElementById("pricing-button");
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  popup.style.display = "block";
+}
+
+span.onclick = function() {
+  popup.style.display = "none";
+}

@@ -12,12 +12,13 @@
     font-family: 'Karla';
     src: url('../fonts/karla-regular-webfont.woff2') format('woff2'),
          url('../fonts/karla-regular-webfont.woff2') format('woff'),
+         url('../fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('../fonts/karla-bold-webfont.woff') format('woff'),
          url('../fonts/karla-italic-webfont.woff2') format('woff2'),
          url('../fonts/karla-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 
 * {
     margin: 0;
@@ -527,6 +528,45 @@ form {
     z-index:998;
   }
 
+    
+#myPopup {
+    transition: all 1s ease-in-out;
+}
+
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.4);
+    transition: all 1s ease-in-out;
+}
+
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 30% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* Row 6 */
 
@@ -780,6 +820,10 @@ form {
         padding: 4em 2em;
     }
 
+    .popup-content {
+        margin: 18% auto; 
+    }
+
     .row6 {
         display: flex;
         margin: 0 auto;
@@ -879,6 +923,10 @@ form {
     .contact {
         width: 75%;
     }
+
+    .popup-content {
+        margin: 10% auto; 
+    }
 }
 
 
@@ -903,62 +951,4 @@ form {
         max-height:175px;
         padding-top:2em;
     }
-}
-
-/* Popup box BEGIN */
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
 }

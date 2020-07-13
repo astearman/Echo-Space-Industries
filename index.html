@@ -150,8 +150,74 @@
 		<p>So what are you waiting for? Grab your checkbook, write down 500k and send it on over to us here at Echo Space Industries.
 			If you have any further questions about pricing or payment options, just click the button below.</p>
 		
-	<button class="page-buttons">MORE INFO ON PRICING</button>
+	<button id ="pricing-button" class="page-buttons">MORE INFO ON PRICING</button>
+	<div id ="myPopup" class="popup">
+		<div class="popup-content">
+		<span class="close">&times;</span>
+		<p> <h1>Trip Price Calculator</h1>
+			<br>
+			<select name='base'>
+				<option value="0">-- Select Base Package --</option>
+				<option value='150000' id="base">Cosmic Package: $150,000</option>
+				<option value='175000' id="base">Astral Package: $175,000</option>
+				<option value='200000' id="base">Stellar Package: $200,000</option>
+			</select>
+		
+			
+			<br>
+		
+			<select name='seat'>
+				<option value="0"> -- Select Seat --</option>
+				<option value='6000' id="seat">Middle: 6,000</option>
+				<option value='8000' id="seat">Aisle: 8,000</option>
+				<option value='10000' id="seat">Window: 10,000</option>
+			</select>
+		
+		
+			<br>
+		
+			<select name='destinations' id="destination">
+				<option value="0"> -- Select Destination --</option>
+				<option value='5000'>Moon: $5,000</option>
+				<option value='15000'>Mercury: $15,000</option>
+				<option value='10000'>Venus: $10,000</option>
+				<option value='20000'>Mars: $20,000</option>
+				<option value='30000'>Jupiter: $30,000</option>
+				<option value='40000'>Saturn: $40,000</option>
+				<option value='50000'>Uranus: $50,000</option>
+				<option value='60000'>Neptune: $60,000</option>
+				<option value='70000'>Pluto (Yes, it's a planet): $70,000</option>
+			</select>
+			
+			<br>
+		
+			<select name='snacks'>
+				<option value="0">-- Select Snack Addon --</option>
+				<option value="0">No Thanks</option>
+				<option value='10'>Moon Rocks: $10</option>
+				<option value='15'>Rocket Kabobs: $15</option>
+				<option value='20'>Galactic Goulash: $20</option>
+			</select>
+
+			<br>
+
+			<select name='drinks'>
+				<option value="0">-- Select Drink Addon --</option>
+				<option value="0">No Thanks</option>
+				<option value="10">Milky Way Martini: $10</option>
+				<option value='10'>Shooting Star Slushie: $10</option>
+				<option value='10'>Martian Mule: $10</option>
+				<option value='10'>Comet Chardonnay: $10</option>
+			</select>
+		
+			<h2>Your Price:</h2>
+			
+			<input id="totalPrice" type="text" />
+		</p>
 	</div>
+	</div>
+	
+</div>
 
 	<div class="featured-img-2">
 		<img src="img/astronaut.png" alt="hands under water">
@@ -174,7 +240,7 @@
 			<p>Our scheduling department is open Monday through Friday 9am-6pm EST. If you are looking for more information about the space charter process,
 			or have questions about your already scheduled trip, press 2 during the selection process.</p>
 			<a href="tel:5028675309">
-			<button class="page-buttons">+1 502 857 5309</button>
+			<button class="page-buttons">+1 502 867 5309</button>
 			</a>
 		</div>
 
@@ -209,18 +275,6 @@
    </form>
 
 </div>	
-
-<a class="trigger_popup_fricc">Click here to show the popup</a>
-
-<div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">&times;</div>
-        <p>Add any HTML content<br />inside the popup box!</p>
-    </div>
-</div>
-
-
 
 
 <footer class="footer">
