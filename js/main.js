@@ -89,18 +89,17 @@ prev.addEventListener('click', x => {
 });
 
 
-// Popup 
-var popup = document.getElementById("myPopup");
-var btn = document.getElementById("pricing-button");
-var span = document.getElementsByClassName("close")[0];
+// Price Popup 
+var pricePopup = document.getElementById("myPopup");
+var priceBtn = document.getElementById("pricing-button");
+var priceSpan = document.getElementsByClassName("close")[0];
 
-
-btn.onclick = function() {
-  popup.style.display = "block";
+priceBtn.onclick = function() {
+  pricePopup.style.display = "block";
 }
 
-span.onclick = function() {
-  popup.style.display = "none";
+priceSpan.onclick = function() {
+  pricePopup.style.display = "none";
 }
 
 // Price Calculator
@@ -109,11 +108,35 @@ sum.onclick = calculatePrice;
 
 function calculatePrice() {
     
-        var options = document.getElementsByClassName('price');
-        var optionsLength = options.length,
+        let options = document.getElementsByClassName('price');
+        let optionsLength = options.length,
         total = 0;
         for (var i = 0; i < optionsLength; ++i) {
           total += parseInt(options[i].value * 1);
         }
         document.getElementById('totalPrice').value = total;
 }
+
+
+// About Popup 
+var aboutPopup = document.getElementById("myPopup2");
+var aboutBtn = document.getElementById("about-button");
+var aboutSpan = document.getElementsByClassName("close2")[0];
+
+aboutBtn.onclick = function() {
+  aboutPopup.style.display = "block";
+}
+
+aboutSpan.onclick = function() {
+  aboutPopup.style.display = "none";
+}
+
+
+let array = ["Dynamic", "Stategic", "Resilient", "Progressive", "Flexible", "Inclusive"];
+array.sort();
+
+for (i = 0; i < array.length; i++) {
+  document.getElementById('array').innerHTML = array;
+  array.join("<br />");
+}
+
