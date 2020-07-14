@@ -114,7 +114,7 @@ function calculatePrice() {
   for (var i = 0; i < optionsLength; ++i) {
     total += parseInt(options[i].value * 1);
       }
-  document.getElementById('totalPrice').value = total;
+  document.getElementById('totalPrice').value = `$${total.toLocaleString()}`;
 }
 
 
@@ -136,8 +136,9 @@ aboutSpan.onclick = function() {
 
 // Adjective Array
 let array = ["Dynamic", "Stategic", "Resilient", "Progressive", "Flexible", "Stellar"]
-const list = array.join(" <br> ");
 const last = array.pop();
+const list = array.join(" <br> ");
+
 
 document.getElementById('adjectives').innerHTML = list;
 document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&ensp;' + 'to work for!';
