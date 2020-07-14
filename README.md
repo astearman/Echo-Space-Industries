@@ -1,5 +1,5 @@
 ## Andy Stearman's Front End Development Website Project
-### My website is for the company, Echo. This is a space charter business.
+### My website is for the space charter company, Echo.
 
 
 *Feature Project Requirements On My Site:*
