@@ -108,14 +108,15 @@ sum.onclick = calculatePrice;
 
 function calculatePrice() {
     
-        let options = document.getElementsByClassName('price');
-        let optionsLength = options.length,
-        total = 0;
-        for (var i = 0; i < optionsLength; ++i) {
-          total += parseInt(options[i].value * 1);
-        }
-        document.getElementById('totalPrice').value = total;
+  let options = document.getElementsByClassName('price');
+  let optionsLength = options.length,
+  total = 0;
+  for (var i = 0; i < optionsLength; ++i) {
+    total += parseInt(options[i].value * 1);
+      }
+  document.getElementById('totalPrice').value = total;
 }
+
 
 
 // About Popup 
@@ -132,11 +133,16 @@ aboutSpan.onclick = function() {
 }
 
 
-let array = ["Dynamic", "Stategic", "Resilient", "Progressive", "Flexible", "Inclusive"];
-array.sort();
 
-for (i = 0; i < array.length; i++) {
-  document.getElementById('array').innerHTML = array;
-  array.join("<br />");
+// Adjective Array
+let array = ["Dynamic", "Stategic", "Resilient", "Progressive", "Flexible", "Stellar"]
+const list = array.join(" <br> ");
+const last = array.pop();
+
+document.getElementById('adjectives').innerHTML = list;
+document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&ensp;' + 'to work for!';
+
+/* for (i = 0; i < array.length; i++) {
+  document.getElementById('adjectives').innerHTML = list;
 }
-
+*/
