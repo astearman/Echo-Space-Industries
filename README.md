@@ -2,7 +2,7 @@
 ### My website is for the space charter company, Echo.
 
 
-*Feature Project Requirements On My Site:*
+> **Feature Project Requirements On My Site:**
   
   **1. A navigation menu that collapses into a responsive mobile-friendly menu (such as a “hamburger” menu)**
   
@@ -30,3 +30,12 @@ There is an array under the "learn more" button in the about section. I listed a
    **7. Create an image carousel with at least 3 images that it rotates through** 
 
 At the top of the page is an image carousel. When you click the 'next' and 'previous' buttons it jumps between 5 different images. It does this by applying the class ".current" to each image. The images are all set to an opacity of 0 and when the 'next' or 'previous' button is clicked, it applies the class ".current", which changes the opacity to 1.
+
+
+> **Special Notes:**
+
+I used 4 graphics from font awesome - the left/right buttons in the carousel as well as the mail and phone icons at the bottom of the page. I included this in the head tag to link them:
+
+     <script src="https://kit.fontawesome.com/968f9825cc.js" crossorigin="anonymous"></script>
+
+I don't believe there will be any issues viewing the icons but just wanted to make note of it.
