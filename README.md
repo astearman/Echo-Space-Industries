@@ -1,8 +1,9 @@
 ## Andy Stearman's Front End Development Website Project
 ### My website is for the space charter company, Echo.
 
+---
 
-> **Feature Project Requirements On My Site:**
+**Feature Project Requirements On My Site:**
   
   **1. A navigation menu that collapses into a responsive mobile-friendly menu (such as a “hamburger” menu)**
   
@@ -32,7 +33,7 @@ There is an array under the "learn more" button in the about section. I listed a
 At the top of the page is an image carousel. When you click the 'next' and 'previous' buttons it jumps between 5 different images. It does this by applying the class ".current" to each image. The images are all set to an opacity of 0 and when the 'next' or 'previous' button is clicked, it applies the class ".current", which changes the opacity to 1.
 
 
-> **Special Notes:**
+**Special Notes:**
 
 I used 4 graphics from font awesome - the left/right buttons in the carousel as well as the mail and phone icons at the bottom of the page. I included this in the head tag to link them:
 
