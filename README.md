@@ -5,7 +5,7 @@
 
 ### Feature Project Requirements On My Site:
   
-  **1.A navigation menu that collapses into a responsive mobile-friendly menu (such as a “hamburger” menu)**
+  **1. A navigation menu that collapses into a responsive mobile-friendly menu (such as a “hamburger” menu)**
   
 Responsive mobile-friendly hamburger menu that appears when screen size is less than 769px.
   
