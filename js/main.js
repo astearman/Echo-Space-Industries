@@ -1,4 +1,17 @@
 
+/* Animate the hamburger menu from 3 lines to an X */
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuOpen = true;
+    menuBtn.classList.add('open');
+  } else {
+    menuOpen = false;
+    menuBtn.classList.remove('open');
+  }
+});
+
 
 /* Dim screen when hamburger menu is open */
 let toggleDimStatus = false;
@@ -17,12 +30,12 @@ let toggleDim = function() {
   } 
   
   else if (toggleDimStatus === true) {
-    
     getDimScreen.style.position = "initial";
 
     toggleDimStatus = false;
   }   
 }
+
 
 /* Hamburger Menu Open/Close */
 let toggleNavStatus = false;
@@ -44,13 +57,14 @@ let toggleNav = function() {
   }   
 }
 
+
 /* Image Carousel */
 const slides = document.querySelectorAll('.banner-slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 
 const nextSlide = () => {
-  // Get Current Class
+
   const current = document.querySelector('.current');
   // Remove Current Class
   current.classList.remove('current');
@@ -79,7 +93,7 @@ const prevSlide = () => {
   setTimeout(() => current.classList.remove('current'));
 };
 
-// Button Events
+// Next and Previous Button Events
 next.addEventListener('click', x => {
   nextSlide();
 });
@@ -102,6 +116,7 @@ priceSpan.onclick = function() {
   pricePopup.style.display = "none";
 }
 
+
 // Price Calculator
 const sum = document.getElementById('add');
 sum.onclick = calculatePrice;
@@ -118,7 +133,6 @@ function calculatePrice() {
 }
 
 
-
 // About Popup 
 var aboutPopup = document.getElementById("myPopup2");
 var aboutBtn = document.getElementById("about-button");
@@ -133,17 +147,29 @@ aboutSpan.onclick = function() {
 }
 
 
-
 // Adjective Array
-let array = ["Dynamic", "Stategic", "Resilient", "Progressive", "Flexible", "Stellar"]
+const array = [
+  "Dynamic", 
+  "Stategic", 
+  "Resilient", 
+  "Influential", 
+  "Progressive", 
+  "Flexible", 
+  "Innovative", 
+  "Determined", 
+  "Nimble", 
+  "Trusting", 
+  "Focused", 
+  "Stellar"
+]
+
+let list = document.getElementById('adjectives');
 const last = array.pop();
-const list = array.join(" <br> ");
 
+array.forEach((item) => {
+  const listItem = document.createElement('li');
+  listItem.innerHTML = `<li>${item}</li>`;
+  list.append(listItem);
+});
 
-document.getElementById('adjectives').innerHTML = list;
-document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&ensp;' + 'to work for!';
-
-/* for (i = 0; i < array.length; i++) {
-  document.getElementById('adjectives').innerHTML = list;
-}
-*/
+document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&nbsp;' + 'to work for!';
