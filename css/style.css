@@ -48,7 +48,7 @@ a {
 
 a:hover {
     color:#5ac0c5;
-  }
+}
 
 p {
     line-height: 1.5em;
@@ -66,7 +66,7 @@ h2 {
     font-size:2.5em;
     padding-bottom: .1em;
     font-weight:500;
-  }
+}
 
 h3 {
     color:#5ac0c5;
@@ -159,7 +159,6 @@ img {
 .nav-title a:hover {
     color:#5ac0c5;
 }
-
 
 /* Vertical Nav */
 
@@ -285,7 +284,7 @@ img {
     height: 100%;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-  }
+}
 
 .banner-slide.current {
     opacity: 1;
@@ -344,10 +343,6 @@ img {
     width: 250px;
 }
 
-.tagline {
-    font-size: 1em;
-}
-
 /* Row 1 aka Featured Article */
 
 .row1 {
@@ -364,8 +359,7 @@ img {
     max-height:200px;
     flex-shrink: 0;
     margin: 0 auto;
-
-  }
+}
 
 .page-buttons {
     padding: 1em 2em;
@@ -388,37 +382,6 @@ img {
     margin: 0 auto;
 }
 
-/* What's New? */
-
-.line-break {
-    display: table;
-    width:68%;
-    margin: 1.8em auto 4em;
-    align-content:center;
-  }
-  
-.line-break > div {
-    display: table-cell;
-    white-space:nowrap;
-  }
-  
-.line > div {
-    border-bottom: 1.5px solid #1a1a1a;
-    opacity:0.3;
-    height: 1px;
-  }
-  
-.line-break-words {
-    padding: 0 5px;
-    font-size:1.5em;
-    font-weight:700;
-  }
-  
-.line {
-    width: 50%;
-    vertical-align: middle;
-  }
-
 /* Row 2 */
 
 .row2 {
@@ -432,13 +395,12 @@ img {
 .stats {
     max-width: 170px;
     max-height: 80px;
-    margin:1em auto;
+    margin: 1em auto;
 }
 
-
 .numbers {
-    font-size: 70px;
-    color:#5ac0c5;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 /* Row 3 */
@@ -465,17 +427,8 @@ img {
     width: 10%;
 }
 
-.numbers2 {
-    font-size: 60px;
-    font-weight:700;
-}
-
 .tertiary a {
     color: darkred;
-}
-
-.array p {
-    line-height:.5em;
 }
 
 .array hr {
@@ -541,11 +494,6 @@ img {
 
 .row5 h2 {
     font-size:2.3em;
-}
-
-.col2 {
-    padding-right: 1em;
-	padding-left: 1em;
 }
 
 .featured-img-2 {
@@ -668,13 +616,13 @@ select {
     color: #000;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
-  }
+}
 
 select {
     padding: 6px;
     height: 32px;
     border-radius: 2px;
-  }
+}
 
 /* Footer */
 
@@ -781,15 +729,10 @@ select {
 
     .testimonial h2 {
         font-size:2em;
-        }
-    
+    }
 
     .col {
         flex: 1 50%;
-    }
-
-    .col2 {
-        flex: 1;
     }
 
     .about {
@@ -881,8 +824,6 @@ select {
 
 
 @media (max-width: 900px) {
-
-
     .pricing {
         width:100%;
     }
@@ -895,7 +836,6 @@ select {
 }
 
 @media (max-width: 768px) {
-
     .featured-img-2 {
         max-width:175px;
         max-height:175px;
