@@ -341,7 +341,7 @@ img {
 .logo {
     margin: 0 auto 3em auto;
     z-index:10;
-    width: 300px;
+    width: 250px;
 }
 
 .tagline {
@@ -536,7 +536,7 @@ img {
 .row5 {
     background-color:#f8f8f8;
     justify-content: space-evenly;
-    padding: 4em 2em 4em 2em;
+    padding: 4em 2em 4.5em 2em;
 }
 
 .row5 h2 {
@@ -554,7 +554,6 @@ img {
     z-index:998;
   }
 
-    
 #myPopup {
     transition: all 1s ease-in-out;
 }
@@ -570,7 +569,6 @@ img {
     background: rgba(0,0,0,0.4);
     transition: all 1s ease-in-out;
 }
-
 
 .popup-content {
     background-color: #fefefe;
@@ -752,7 +750,7 @@ select {
         width: 90%;
         margin: 0 auto;
         padding-top: 3em;
-        padding-bottom:4.5em;
+        padding-bottom:5em;
     }
 
     .row4 {
@@ -793,7 +791,6 @@ select {
     .col2 {
         flex: 1;
     }
-    
 
     .about {
         padding-top:1.5em;
@@ -815,6 +812,12 @@ select {
     #dimmer {
         transition: all 0.5s ease-in-out;
         display: none;
+    }
+
+    .logo {
+        margin: 0 auto 3em auto;
+        z-index:10;
+        width: 300px;
     }
 }
 

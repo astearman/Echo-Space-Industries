@@ -172,4 +172,4 @@ array.forEach((item) => {
   list.append(listItem);
 });
 
-document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&nbsp;' + 'to work for!';
+document.getElementById('last').innerHTML = 'But most importantly, we are ' + '<i>' + last + '</i>' + '&nbsp;' + '&nbsp;' + 'to work for!';
